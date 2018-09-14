@@ -6,10 +6,10 @@
  * and wrapped by `*`
  *
  */
-
+const whisper = str => '*' + str.toLowerCase() + '*'
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(whisper('YOU BLOODY IDIOT'), '*you bloody idiot*')
 // End of tests */

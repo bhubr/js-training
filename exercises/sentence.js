@@ -5,7 +5,7 @@
  * and return a string of all the element separated by a space
  *
  */
-
+const sentence = arr => arr.join(' ')
 
 //* Begin of tests
 const assert = require('assert')

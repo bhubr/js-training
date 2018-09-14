@@ -8,6 +8,13 @@
  */
 
 // Your code :
+const getFirst = arrOrStr => {
+  if (arrOrStr.length === 0) {
+    return undefined
+  }
+
+  return arrOrStr[0]
+}
 
 //* Begin of tests
 const assert = require('assert')

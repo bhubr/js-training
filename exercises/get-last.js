@@ -6,7 +6,13 @@
  *
  * @notions Data-Structures, Get
  */
+const getLast = arrOrStr => {
+  if (arrOrStr.length === 0) {
+    return undefined
+  }
 
+  return arrOrStr[arrOrStr.length - 1]
+}
 // Your code :
 
 //* Begin of tests

@@ -9,6 +9,13 @@
  */
 
 // Your code :
+const multiply = (a, b) => {
+  let result = 0
+  for(let count = 0 ; count < a ; count++) {
+    result += b
+  }
+  return result
+}
 
 //* Begin of tests
 const assert = require('assert')
