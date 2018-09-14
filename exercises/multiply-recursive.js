@@ -10,6 +10,13 @@
  */
 
 // Your code :
+const multiply = (a, b) => {
+  if (b === 0) {
+    return 0
+  }
+  const increment = b > 0 ? -1 : 1
+  return (b > 0 ? a : -a) + multiply(a, b + increment)
+}
 
 //* Begin of tests
 const assert = require('assert')

@@ -11,10 +11,12 @@
 // Your code :
 const multiply = (a, b) => {
   let result = 0
-  for(let count = 0 ; count < a ; count++) {
+  const isNegative = a < 0
+  const limit = isNegative ? -a : a
+  for(let count = 0 ; count < limit ; count++) {
     result += b
   }
-  return result
+  return isNegative ? -result : result
 }
 
 //* Begin of tests

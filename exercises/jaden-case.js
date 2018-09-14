@@ -9,9 +9,9 @@
  * Example : "How are you ?" -> "How Are You ?"
  *
  */
-const capitalizeFirst = str => str[0].toUpperCase() + str.substr(1).toLowerCase()
+const capitalize = str => str[0].toUpperCase() + str.substr(1).toLowerCase()
 
-const jadenCase = str => str.split(' ').map(capitalizeFirst).join(' ')
+const jadenCase = str => str.split(' ').map(capitalize).join(' ')
 
 //* Begin of tests
 const assert = require('assert')
